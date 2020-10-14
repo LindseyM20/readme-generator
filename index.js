@@ -55,14 +55,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  // try arrow function and ternary operator
-  fs.writeFile(fileName, data, function (error) {
-    if (error) {
-      return console.log(error);
-    } else {
-      console.log("Readme written!");
-    }
-  });
+  fs.writeFile(fileName, data, (error) => error ? console.log(error) : console.log("Readme written!"))
 }
 
 
