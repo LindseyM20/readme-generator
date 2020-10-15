@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -29,7 +28,7 @@ const questions = [
     type: "input",
     message: "What commands should be run to install dependencies?",
     name: "installation",
-    default: "npm i"
+    default: "npm install"
   },
   {
     type: "input",
@@ -60,17 +59,13 @@ function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (error) => error ? console.log(error) : console.log("Readme written!"))
 }
 
-
-
 // function to initialize program
 function init() {
-
   inquirer
     .prompt(questions)
     .then((userAnswers) => {
       writeToFile("README.md", generateMarkdown({ ...userAnswers }));
     })
-
 }
 
 // function call to initialize program

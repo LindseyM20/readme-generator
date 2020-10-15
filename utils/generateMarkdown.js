@@ -17,8 +17,16 @@ function generateMarkdown(data) {
     case "Unlicense":
       badge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
       break;
-    case "none":
+    default:
+      badge = "";
       break;
+  }
+
+  let licenseInfo;
+  if (data.license !== "None") {
+    licenseInfo = `The contents of this repository are protected under the ${data.license} license`
+  } else {
+    licenseInfo = "N/A"
   }
 
   return `# ${data.title}
@@ -29,12 +37,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  * ### [Installation](#installation)
-  * ### [Usage](#usage)
-  * ### [License](#license)
-  * ### [Contributing](#contributing)
-  * ### [Tests](#tests)
-  * ### [Questions](#questions)
+  * [**Installation**](#installation)
+  * [**Usage**](#usage)
+  * [**Contributing**](#contributing)
+  * [**Tests**](#tests)
+  * [**License**](#license)
+  * [**Questions**](#questions)
 
   ## Installation
   Commands to run to install dependencies: ${data.installation}
@@ -47,6 +55,9 @@ function generateMarkdown(data) {
 
   ## Tests
   Command to run tests: ${data.test}
+
+  ## License
+  ${licenseInfo}
 
   ## Questions
   Follow me on GitHub at https://github.com/${data.github}
