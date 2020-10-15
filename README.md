@@ -18,6 +18,8 @@
 
   ## Usage
   Clone this repo, save it locally, and run when you need a Readme.
+  
+  ![walkthrough video](https://drive.google.com/file/d/1JZ8gtQofo46kabYuYV8HfQIkS_i_osOc/view?usp=sharing)
 
   ## Contributing
   Contact me
