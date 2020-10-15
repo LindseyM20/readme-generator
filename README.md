@@ -19,7 +19,7 @@
   ## Usage
   Clone this repo, save it locally, and run when you need a Readme.
   
-  [![Walkthrough video](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://drive.google.com/file/d/1JZ8gtQofo46kabYuYV8HfQIkS_i_osOc/view?usp=sharing)
+  [Walkthrough video](https://drive.google.com/file/d/1JZ8gtQofo46kabYuYV8HfQIkS_i_osOc/view?usp=sharing)
 
   ## Contributing
   Contact me
