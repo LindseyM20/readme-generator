@@ -23,7 +23,7 @@
   Contact me
 
   ## Tests
-  Command to run tests: npm test
+  Command to run tests: N/A
 
   ## License
   The contents of this repository are protected under the MIT license
